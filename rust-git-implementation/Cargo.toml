@@ -1,0 +1,41 @@
+[package]
+name = "oxid"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <your.email@example.com>"]
+description = "A Git implementation in Rust for learning purposes"
+
+[[bin]]
+name = "oxid"
+path = "src/main.rs"
+
+[lib]
+name = "oxid"
+path = "src/lib.rs"
+
+[dependencies]
+# SHA-1 hashing
+sha1 = "0.10"
+
+# Compression
+flate2 = "1.0"
+
+# Command-line argument parsing
+clap = { version = "4.0", features = ["derive"] }
+
+# Error handling
+anyhow = "1.0"
+
+# Serialization (for index)
+bincode = "1.3"
+serde = { version = "1.0", features = ["derive"] }
+
+# File system operations
+walkdir = "2.3"
+
+# Time handling
+chrono = "0.4"
+
+[dev-dependencies]
+# Testing
+tempfile = "3.3"

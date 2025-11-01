@@ -1,6 +1,6 @@
 # Rust
 target/
-Cargo.lock
+# Cargo.lock  # Uncommented - we keep this for binary projects
 **/*.rs.bk
 *.pdb
 
