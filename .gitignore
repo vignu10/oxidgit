@@ -1,0 +1,44 @@
+# Rust
+target/
+Cargo.lock
+**/*.rs.bk
+*.pdb
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Testing
+/tmp/
+test-repo/
+test-repos/
+*.test/
+
+# Build artifacts
+*.o
+*.so
+*.dylib
+*.dll
+*.exe
+
+# Backup files
+*.bak
+*.tmp
+*~
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
