@@ -30,8 +30,8 @@ Explore Git's internal structures hands-on.
 
 - [04 - Exploring the .git Directory](phase-2-git-internals/04-exploring-git-directory.md)
 - [05 - How Git Stores Data](phase-2-git-internals/05-how-git-stores-data.md)
-- 06 - Refs and HEAD
-- 07 - The Index (Staging Area)
+- [06 - Git References and HEAD](phase-2-git-internals/06-refs-and-head.md)
+- [07 - The Git Index (Staging Area)](phase-2-git-internals/07-git-index.md)
 
 **Milestone**: You can navigate and understand every file in `.git/`
 
@@ -40,9 +40,9 @@ Explore Git's internal structures hands-on.
 Learn the Rust you need to build Git.
 
 - [08 - Rust Basics for Git](phase-3-rust-fundamentals/08-rust-basics-for-git.md)
-- 09 - Rust Error Handling
-- 10 - Rust File I/O
-- 11 - Rust Traits and Structs
+- [09 - Rust Error Handling](phase-3-rust-fundamentals/09-rust-error-handling.md)
+- [10 - Working with Files and Paths in Rust](phase-3-rust-fundamentals/10-rust-file-io.md)
+- [11 - Parsing and Serialization in Rust](phase-3-rust-fundamentals/11-rust-parsing.md)
 
 **Milestone**: You can write Rust programs that work with files and handle errors
 
@@ -144,14 +144,14 @@ Use this checklist to track your progress:
 **Phase 2 - Git Internals**
 - [ ] Lesson 04: Exploring .git Directory
 - [ ] Lesson 05: How Git Stores Data
-- [ ] Lesson 06: Refs and HEAD
-- [ ] Lesson 07: The Index
+- [ ] Lesson 06: Git References and HEAD
+- [ ] Lesson 07: The Git Index
 
 **Phase 3 - Rust Fundamentals**
 - [ ] Lesson 08: Rust Basics for Git
-- [ ] Lesson 09: Error Handling
-- [ ] Lesson 10: File I/O
-- [ ] Lesson 11: Traits and Structs
+- [ ] Lesson 09: Rust Error Handling
+- [ ] Lesson 10: Working with Files and Paths
+- [ ] Lesson 11: Parsing and Serialization
 
 **Phase 4 - Building Git**
 - [ ] Lesson 12: Project Setup
@@ -194,18 +194,30 @@ This repository contains:
 learning-materials/
 ├── README.md (you are here)
 ├── phase-1-foundations/
+│   ├── 00-introduction-and-roadmap.md
+│   ├── 01-what-is-git-really.md
+│   ├── 02-content-addressable-storage.md
+│   └── 03-git-objects-explained.md
 ├── phase-2-git-internals/
+│   ├── 04-exploring-git-directory.md
+│   ├── 05-how-git-stores-data.md
+│   ├── 06-refs-and-head.md
+│   └── 07-git-index.md
 ├── phase-3-rust-fundamentals/
+│   ├── 08-rust-basics-for-git.md
+│   ├── 09-rust-error-handling.md
+│   ├── 10-rust-file-io.md
+│   └── 11-rust-parsing.md
 ├── phase-4-building-git/
+│   ├── 12-project-setup-and-architecture.md
+│   └── 13-implementing-hash-object.md
 ├── exercises/
 │   ├── phase-1-exercises.md
-│   ├── phase-2-exercises.md
-│   ├── phase-3-exercises.md
+│   ├── phase-2-exercises.md (NEW!)
+│   ├── phase-3-exercises.md (NEW!)
 │   └── phase-4-exercises.md
 └── reference/
-    ├── glossary.md
-    ├── git-commands-internals.md
-    └── rust-quick-reference.md
+    └── glossary.md
 ```
 
 Your implementation will go in:
